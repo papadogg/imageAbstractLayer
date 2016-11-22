@@ -20,14 +20,38 @@
                     <li><h4>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</h4></li>
                     <li><h4>I can get a list of the most recently submitted search strings.</h4></li>
                 </ul>
-                <h3>Example creation usage:</h3>
-                <span>https://morning-beyond-54431.herokuapp.com/new/https://www.google.com</span>
-                <h3>Example creation output:</h3>
-                <span>original_url: https://www.google.com , short_url:"https://morning-beyond-54431.herokuapp.com/1</span>
-                <h3>Usage:</h3>
-                <span>https://morning-beyond-54431.herokuapp.com/1</span>
-                <h3>Will redirect to:</h3>
-                <span>https://www.google.com/</span>
+                <h3>Get images:</h3>
+                <span>https://immense-anchorage-83240.herokuapp.com/imagesearch/lolcat</span><br>
+                <span>https://immense-anchorage-83240.herokuapp.com/imagesearch/lolcat?offest=2</span>
+                <h3>Output:</h3>
+                <span>[<br>
+                    &nbsp;&nbsp;&nbsp;{ 
+                    <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "react energy | Relivecorp's Blog",<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"thumbnail": "https://tse1.mm.bing.net/th?id=OIP.Mb28a47336fd4112856c95750438cc18bo0&pid=Api",<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "http://www.bing.com/cr?IG=C7F7243E13E24EB79EECA584597B1BD...",<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"host": "http://www.bing.com/cr?IG=C7F7243E13E24EB79EECA584597B1BD8&CID=3DBC40DA94C068C31B91490F9527696F&r..."<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;,<br>
+                    &nbsp;&nbsp;&nbsp;{<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                   &nbsp;&nbsp;&nbsp;},<br>
+                     &nbsp;&nbsp;&nbsp;...<br>
+                    
+                    ]</span>
+                <h3>Get a list of the most recently submitted search strings:</h3>
+                <span>https://immense-anchorage-83240.herokuapp.com/latest</span>
+                <h3>Output:</h3>
+                <span>[
+  {
+    "term": "yoda",
+    "when": "2016-11-22T14:53:32.717Z"
+  },
+  {
+    "term": "react",
+    "when": "2016-11-22T14:53:24.680Z"
+  }
+]</span>
             </div>
         </div>
     </body>
